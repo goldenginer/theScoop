@@ -1,0 +1,49 @@
+users:
+  Jeff:
+    username: Jeff
+    articleIds: []
+    commentIds:
+      - 3
+  Test User:
+    username: Test User
+    articleIds:
+      - 2
+    commentIds: []
+  CodecademyUser1234:
+    username: CodecademyUser1234
+    articleIds:
+      - 3
+    commentIds: []
+articles:
+  '1': null
+  '2':
+    id: 2
+    title: This is a new article
+    url: www.google.com
+    username: Test User
+    commentIds: []
+    upvotedBy:
+      - Test User
+    downvotedBy: []
+  '3':
+    id: 3
+    title: Try out Codecademy
+    url: www.codecademy.com
+    username: CodecademyUser1234
+    commentIds:
+      - 3
+    upvotedBy:
+      - CodecademyUser1234
+      - Jeff
+    downvotedBy: []
+    comments: []
+comments:
+  '3':
+    id: 3
+    body: Looks good!
+    username: Jeff
+    articleId: 3
+    upvotedBy: []
+    downvotedBy: []
+nextArticleId: 4
+nextCommentId: 4
